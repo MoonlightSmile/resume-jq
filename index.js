@@ -7,7 +7,8 @@ $('#fullpage').fullpage({
   menu: '#menu',
   'navigation': true,
   'scrollingSpeed': 700,
-  anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+  anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+  paddingTop: 85
 });
 
 $(".down img").click(function(){

@@ -15,7 +15,6 @@ a {
 }
 
 body {
-  padding-top: 85px;
   nav {
     position: fixed;
     top: 0;
@@ -58,7 +57,8 @@ body {
   }
   #fullpage {
     .section {
-      height: calc(100vh - 85px);
+      height: 100vh;
+      width: 100vw;
       text-align: center;
       .home {
         height: 70%;
@@ -80,7 +80,7 @@ body {
         }
       }
       .down {
-        height: calc(30% - 85px);
+        height: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -93,13 +93,14 @@ body {
         }
       }
       .skill {
-        padding-top: 50px;
+        height: 100%;
         h2 {
+          margin-top: 10px;
           color: #4D4D4D;
           font-size: 34px;
         }
         p {
-          margin-bottom: 60px;
+          margin-bottom: 30px;
           color: #868080;
         }
         div.message {
@@ -107,6 +108,7 @@ body {
           width: 940px;
           margin: 0 auto;
           text-align: left;
+          font-size: 16px;
           ul{
             list-style-type: disc;
             li {
