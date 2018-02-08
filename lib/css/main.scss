@@ -109,7 +109,7 @@ body {
           margin: 0 auto;
           text-align: left;
           font-size: 16px;
-          ul{
+          ul {
             list-style-type: disc;
             li {
               margin-left: 35px;
@@ -150,6 +150,74 @@ body {
               }
             }
           }
+        }
+      }
+      .aboutMe {
+        height: 100%;
+        h2 {
+          margin-top: 40px;
+          color: #4D4D4D;
+          font-size: 34px;
+        }
+        p {
+          margin-bottom: 30px;
+          color: #868080;
+        }
+        .messageWrap {
+          width: 940px;
+          margin-top: 100px;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 22px;
+          display: flex;
+          justify-content: center;
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+          .avatar {
+            text-align: left;
+            color: rgb(77, 77, 77);
+            width: 400px;
+            padding: 20px;
+            img {
+              width: 300px;
+            }
+            .contact {
+              font-size: 20px;
+              text-align: left;
+
+              p {
+                margin: 15px;
+              }
+            }
+          }
+          .message {
+            margin-left: 40px;
+            font-size: 20px;
+            padding-top: 60px;
+            text-align: left;
+            dl {
+              margin: 15px;
+              dt {
+                display: inline-block;
+                color: grey;
+                min-width: 5em;
+              }
+              dd {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+      .project {
+        height: 100%;
+        h2 {
+          margin-top: 10px;
+          color: #4D4D4D;
+          font-size: 34px;
+        }
+        p {
+          margin-bottom: 30px;
+          color: #868080;
         }
       }
     }

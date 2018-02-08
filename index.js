@@ -1,4 +1,5 @@
 import "./lib/css/main.scss"
+import "./lib/css/jquery.fullpage.css"
 require("fullpage.js")
 const $ = require("jquery")
 
@@ -6,9 +7,9 @@ $('#fullpage').fullpage({
   continuousVertical: false,
   menu: '#menu',
   'navigation': true,
-  'scrollingSpeed': 700,
-  anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-  paddingTop: 85
+  anchors: ['page1', 'page2', 'page3', 'page4', 'page5','page6'],
+  paddingTop: 85,
+  css3: true
 });
 
 $(".down img").click(function(){
