@@ -13664,7 +13664,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '50346' + '/');
+  var ws = new WebSocket('wss://' + hostname + ':' + '50346' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
