@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "node-sass": "^4.7.2"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "yarcel build index.js"
   }
 }

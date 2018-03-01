@@ -11,257 +11,269 @@ a {
   text-decoration: none;
   color: inherit; }
 
-body nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-  padding: 24px 32px;
-  background-color: transparent;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
-  body nav .logo {
-    font-size: 30px;
-    font-family: monospace;
-    font-weight: 900;
-    color: #61D6BD; }
-  body nav #menu {
-    display: flex;
-    color: #00d3aa;
-    font-size: 16px;
-    font-weight: 700; }
-    body nav #menu li {
-      border-bottom: 3px solid transparent;
-      margin-left: 10px;
-      padding: 6px; }
-      body nav #menu li:hover {
-        color: #3E8C7C;
-        transition: none; }
-      body nav #menu li a {
-        padding: 6px 8px; }
-    body nav #menu li.active a {
-      border-bottom: 3px solid #61D6BD; }
-
-body #fullpage .section {
-  border: 1px solid #000;
-  height: calc(100vh - 80px);
-  width: 100vw;
-  text-align: center; }
-  body #fullpage .section .home {
-    height: 70%;
-    background-size: cover;
-    background-position: center;
-    background-image: url("18c67340e6548dcbb716878470f944a4.jpg");
-    background-repeat: no-repeat; }
-    body #fullpage .section .home .my {
-      height: 100%;
-      background: rgba(0, 0, 0, 0.3);
-      color: #fff;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column; }
-      body #fullpage .section .home .my h1 {
-        margin-top: 40px; }
-  body #fullpage .section .down {
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    body #fullpage .section .down img {
-      cursor: pointer;
-      width: 30px; }
-      body #fullpage .section .down img:hover {
-        opacity: .4; }
-  body #fullpage .section .skill {
-    height: 100%; }
-    body #fullpage .section .skill h2 {
-      margin-top: 10px;
-      color: #4D4D4D;
-      font-size: 34px; }
-    body #fullpage .section .skill p {
-      margin-bottom: 30px;
-      color: #868080; }
-    body #fullpage .section .skill div.message {
-      color: #4D4D4D;
-      width: 940px;
-      margin: 0 auto;
-      text-align: left;
-      font-size: 16px; }
-      body #fullpage .section .skill div.message ul {
-        list-style-type: disc; }
-        body #fullpage .section .skill div.message ul li {
-          margin-left: 35px; }
-    body #fullpage .section .skill .skillContent {
-      width: 940px;
-      margin: 0 auto;
-      padding: 35px 40px;
-      padding-bottom: 0;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-      background: #fff;
-      margin-bottom: 40px; }
-      body #fullpage .section .skill .skillContent ol {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row; }
-        body #fullpage .section .skill .skillContent ol li {
-          height: 10%;
-          width: 47%;
-          margin-left: 2%;
-          margin-bottom: 4%;
-          text-align: left; }
-          body #fullpage .section .skill .skillContent ol li .progressBar-wrap {
-            background: #FAE1E1;
-            height: 5px;
-            border-radius: 3px;
-            margin-top: 6px;
-            overflow: hidden; }
-            body #fullpage .section .skill .skillContent ol li .progressBar-wrap .progressBar {
-              width: 10%;
-              height: 100%;
-              background: #E86767;
-              border-radius: 3px;
-              transition: all .4s; }
-  body #fullpage .section footer {
-    height: 10%;
-    background: #2F2F2F;
-    border: 1px solid #000;
-    position: absolute;
-    bottom: 0;
+body {
+  font: 16px Helvetica, Arial, sans-serif;
+  line-height: 1.62; }
+  body nav {
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #FFFFFF; }
-    body #fullpage .section footer h1 {
+    justify-content: space-between;
+    z-index: 1;
+    padding: 24px 32px;
+    background-color: transparent;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+    body nav .logo {
+      font-size: 30px;
+      font-family: monospace;
+      font-weight: 900;
       color: #61D6BD; }
-    body #fullpage .section footer div {
-      text-align: center;
-      position: absolute;
-      right: 10px; }
-      body #fullpage .section footer div .ban {
-        font-size: 13px;
-        color: #A9A697; }
-  body #fullpage .section .contactMe {
-    margin-top: -200px;
-    color: #4D4D4D;
-    text-align: left; }
-    body #fullpage .section .contactMe h1 {
-      text-align: center;
-      margin-bottom: 60px; }
-    body #fullpage .section .contactMe .wrap {
+    body nav #menu {
       display: flex;
-      justify-content: center; }
-      body #fullpage .section .contactMe .wrap h2 {
-        margin: 20px 0; }
-      body #fullpage .section .contactMe .wrap .left {
-        padding: 10px;
-        width: 40%; }
-      body #fullpage .section .contactMe .wrap .right {
-        padding: 10px;
-        margin-left: 10%;
-        width: 40%; }
-        body #fullpage .section .contactMe .wrap .right p {
-          margin: 10px 0; }
-  body #fullpage .section .aboutMe {
-    height: 100%; }
-    body #fullpage .section .aboutMe h2 {
-      margin-top: 40px;
-      color: #4D4D4D;
-      font-size: 34px; }
-    body #fullpage .section .aboutMe p {
-      margin-bottom: 30px;
-      color: #868080; }
-    body #fullpage .section .aboutMe .messageWrap {
-      width: 940px;
-      margin-top: 100px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 22px;
+      color: #00d3aa;
+      font-size: 16px;
+      font-weight: 700; }
+      body nav #menu li {
+        border-bottom: 3px solid transparent;
+        margin-left: 10px;
+        padding: 6px; }
+        body nav #menu li:hover {
+          color: #3E8C7C;
+          transition: none; }
+        body nav #menu li a {
+          padding: 6px 8px; }
+      body nav #menu li.active a {
+        border-bottom: 3px solid #61D6BD; }
+  body #fullpage .section {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    text-align: center; }
+    body #fullpage .section .home {
+      height: 70%;
+      background-size: cover;
+      background-position: center;
+      background-image: url("70786728de56c8d905bc13a4c05a078d.jpg");
+      background-repeat: no-repeat; }
+      body #fullpage .section .home .my {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column; }
+        body #fullpage .section .home .my h1 {
+          margin-top: 40px; }
+    body #fullpage .section .down {
+      height: 30%;
       display: flex;
       justify-content: center;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }
-      body #fullpage .section .aboutMe .messageWrap .avatar {
+      align-items: center; }
+      body #fullpage .section .down img {
+        cursor: pointer;
+        width: 30px; }
+        body #fullpage .section .down img:hover {
+          opacity: .4; }
+    body #fullpage .section .skill {
+      height: 100%; }
+      body #fullpage .section .skill h2 {
+        margin-top: 10px;
+        color: #4D4D4D;
+        font-size: 34px; }
+      body #fullpage .section .skill p {
+        margin-bottom: 30px;
+        color: #868080; }
+      body #fullpage .section .skill div.message {
+        color: #4D4D4D;
+        width: 940px;
+        margin: 0 auto;
         text-align: left;
-        color: #4d4d4d;
-        width: 400px;
-        padding: 20px; }
-        body #fullpage .section .aboutMe .messageWrap .avatar img {
-          width: 300px; }
-        body #fullpage .section .aboutMe .messageWrap .avatar .contact {
-          font-size: 20px;
-          text-align: left; }
-          body #fullpage .section .aboutMe .messageWrap .avatar .contact p {
-            margin: 15px; }
-      body #fullpage .section .aboutMe .messageWrap .message {
-        margin-left: 40px;
-        font-size: 20px;
-        padding-top: 60px;
-        text-align: left; }
-        body #fullpage .section .aboutMe .messageWrap .message dl {
-          margin: 15px; }
-          body #fullpage .section .aboutMe .messageWrap .message dl dt {
-            display: inline-block;
-            color: grey;
-            min-width: 5em; }
-          body #fullpage .section .aboutMe .messageWrap .message dl dd {
-            display: inline-block; }
-  body #fullpage .section .project {
-    height: 100%; }
-    body #fullpage .section .project h2 {
-      margin-top: 10px;
+        font-size: 16px; }
+        body #fullpage .section .skill div.message ul {
+          list-style-type: disc; }
+          body #fullpage .section .skill div.message ul li {
+            margin-left: 35px; }
+      body #fullpage .section .skill .skillContent {
+        width: 940px;
+        margin: 0 auto;
+        padding: 35px 40px;
+        padding-bottom: 0;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        background: #fff;
+        margin-bottom: 40px; }
+        body #fullpage .section .skill .skillContent ol {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row; }
+          body #fullpage .section .skill .skillContent ol li {
+            height: 10%;
+            width: 47%;
+            margin-left: 2%;
+            margin-bottom: 4%;
+            text-align: left; }
+            body #fullpage .section .skill .skillContent ol li .progressBar-wrap {
+              background: #FAE1E1;
+              height: 5px;
+              border-radius: 3px;
+              margin-top: 6px;
+              overflow: hidden; }
+              body #fullpage .section .skill .skillContent ol li .progressBar-wrap .progressBar {
+                width: 10%;
+                height: 100%;
+                background: #E86767;
+                border-radius: 3px;
+                transition: all .4s; }
+    body #fullpage .section footer {
+      height: 10%;
+      background: #2F2F2F;
+      border: 1px solid #000;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FFFFFF; }
+      body #fullpage .section footer h1 {
+        color: #61D6BD; }
+      body #fullpage .section footer div {
+        text-align: center;
+        position: absolute;
+        right: 10px; }
+        body #fullpage .section footer div .ban {
+          font-size: 13px;
+          color: #A9A697; }
+    body #fullpage .section .contactMe {
+      width: 940px;
+      margin-top: -200px;
       color: #4D4D4D;
-      font-size: 34px; }
-    body #fullpage .section .project p {
-      margin-bottom: 30px;
-      color: #868080; }
-    body #fullpage .section .project .projectTab {
-      margin-right: auto;
       margin-left: auto;
-      width: 940px; }
-      body #fullpage .section .project .projectTab .tab {
+      margin-right: auto;
+      text-align: left; }
+      body #fullpage .section .contactMe a:hover {
+        color: red; }
+      body #fullpage .section .contactMe h1 {
+        text-align: center;
+        margin-bottom: 60px; }
+      body #fullpage .section .contactMe .wrap {
+        display: flex;
+        justify-content: center; }
+        body #fullpage .section .contactMe .wrap h2 {
+          margin: 20px 0; }
+        body #fullpage .section .contactMe .wrap .left {
+          padding: 10px;
+          width: 40%; }
+        body #fullpage .section .contactMe .wrap .right {
+          padding: 10px;
+          margin-left: 10%;
+          width: 40%; }
+          body #fullpage .section .contactMe .wrap .right p {
+            margin: 10px 0; }
+    body #fullpage .section .aboutMe {
+      height: 100%; }
+      body #fullpage .section .aboutMe h2 {
+        margin-top: 40px;
+        color: #4D4D4D;
+        font-size: 34px; }
+      body #fullpage .section .aboutMe p {
+        margin-bottom: 30px;
+        color: #868080; }
+      body #fullpage .section .aboutMe .messageWrap {
+        width: 940px;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 22px;
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid #DFE2E6;
-        color: #9C9D9C;
-        font-size: 14px; }
-        body #fullpage .section .project .projectTab .tab li {
-          transition: all 0.4s;
-          padding: 10px 20px;
-          border: 1px solid #fff;
-          cursor: pointer;
-          border-top-left-radius: 5px;
-          border-top-right-radius: 5px; }
-          body #fullpage .section .project .projectTab .tab li.active {
-            border: 1px solid #DFE2E6;
-            border-bottom: 2px solid #fff;
-            color: #4D4D4D; }
-      body #fullpage .section .project .projectTab .content {
-        text-align: left;
-        height: 600px; }
-        body #fullpage .section .project .projectTab .content li {
-          position: relative;
-          transition: all 0.4s;
-          width: 100%;
-          height: 100%;
-          display: none;
-          padding: 80px; }
-          body #fullpage .section .project .projectTab .content li.active {
-            display: flex; }
-          body #fullpage .section .project .projectTab .content li img {
-            width: 400px;
-            margin-left: 20px;
-            position: absolute;
-            right: 0; }
-          body #fullpage .section .project .projectTab .content li .left {
-            margin-right: 400px;
-            padding: 10px; }
-            body #fullpage .section .project .projectTab .content li .left h3 {
-              margin: 10px 0; }
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); }
+        body #fullpage .section .aboutMe .messageWrap .avatar {
+          text-align: left;
+          color: #4d4d4d;
+          width: 400px;
+          padding: 20px; }
+          body #fullpage .section .aboutMe .messageWrap .avatar img {
+            width: 300px; }
+          body #fullpage .section .aboutMe .messageWrap .avatar .contact {
+            font-size: 20px;
+            text-align: left; }
+            body #fullpage .section .aboutMe .messageWrap .avatar .contact p {
+              margin: 15px; }
+        body #fullpage .section .aboutMe .messageWrap .message {
+          margin-left: 40px;
+          font-size: 20px;
+          padding-top: 60px;
+          text-align: left; }
+          body #fullpage .section .aboutMe .messageWrap .message dl {
+            margin: 15px; }
+            body #fullpage .section .aboutMe .messageWrap .message dl dt {
+              display: inline-block;
+              color: grey;
+              min-width: 5em; }
+            body #fullpage .section .aboutMe .messageWrap .message dl dd {
+              display: inline-block; }
+    body #fullpage .section .project {
+      height: 100%; }
+      body #fullpage .section .project h2 {
+        margin-top: 10px;
+        color: #4D4D4D;
+        font-size: 34px; }
+      body #fullpage .section .project p {
+        margin-bottom: 30px;
+        color: #868080; }
+      body #fullpage .section .project .projectTab {
+        margin-right: auto;
+        margin-left: auto;
+        width: 940px; }
+        body #fullpage .section .project .projectTab .tab {
+          display: flex;
+          justify-content: center;
+          border-bottom: 1px solid #DFE2E6;
+          color: #9C9D9C;
+          font-size: 14px; }
+          body #fullpage .section .project .projectTab .tab li {
+            user-select: none;
+            transition: all 0.4s;
+            padding: 10px 20px;
+            border: 1px solid #fff;
+            cursor: pointer;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px; }
+            body #fullpage .section .project .projectTab .tab li.active {
+              border: 1px solid #DFE2E6;
+              border-bottom: 2px solid #fff;
+              color: #4D4D4D; }
+        body #fullpage .section .project .projectTab .content {
+          text-align: left;
+          height: 600px; }
+          body #fullpage .section .project .projectTab .content li {
+            position: relative;
+            transition: all 1s;
+            width: 100%;
+            height: 100%;
+            display: none;
+            padding: 80px; }
+            body #fullpage .section .project .projectTab .content li.active {
+              display: flex; }
+            body #fullpage .section .project .projectTab .content li img {
+              min-width: 200px;
+              max-width: 400px;
+              max-height: 400px;
+              margin-right: 100px;
+              position: absolute;
+              right: 0;
+              box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+            body #fullpage .section .project .projectTab .content li .left {
+              margin-right: 400px;
+              padding: 10px; }
+              body #fullpage .section .project .projectTab .content li .left h3 {
+                margin: 10px 0; }
+              body #fullpage .section .project .projectTab .content li .left p {
+                color: #4d4d4d; }
 /*!
  * fullPage 2.9.6
  * https://github.com/alvarotrigo/fullPage.js

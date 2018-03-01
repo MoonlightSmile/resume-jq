@@ -138,7 +138,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../imgs/banner.jpg":[["18c67340e6548dcbb716878470f944a4.jpg",10],10],"_css_loader":8}],7:[function(require,module,exports) {
+},{"./../imgs/banner.jpg":[["70786728de56c8d905bc13a4c05a078d.jpg",9],9],"_css_loader":8}],7:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -331,7 +331,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],9:[function(require,module,exports) {
+},{}],11:[function(require,module,exports) {
 var global = (1,eval)("this");
 var process = require("process");
 /*!
@@ -10699,7 +10699,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":13}],11:[function(require,module,exports) {
+},{"process":13}],10:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * fullPage 2.9.6
@@ -13615,7 +13615,7 @@ var global = (1,eval)("this");
     }; //end of $.fn.fullpage
 });
 
-},{"jquery":9}],2:[function(require,module,exports) {
+},{"jquery":11}],2:[function(require,module,exports) {
 "use strict";
 
 require("./lib/css/main.scss");
@@ -13641,9 +13641,10 @@ $(".down img").click(function () {
 $(`.project .tab li`).click(function (event) {
   let $index = $(this).index();
   $(this).addClass('active').siblings().removeClass('active');
+
   $(`.project .content li`).removeClass('active').eq($index).addClass('active');
 });
-},{"./lib/css/main.scss":6,"./lib/css/jquery.fullpage.css":7,"fullpage.js":11,"jquery":9}],46:[function(require,module,exports) {
+},{"./lib/css/main.scss":6,"./lib/css/jquery.fullpage.css":7,"fullpage.js":10,"jquery":11}],38:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -13663,7 +13664,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '53732' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '50346' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -13764,5 +13765,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[46,2])
+},{}]},{},[38,2])
 //# sourceMappingURL=/dist/resume-jq.map

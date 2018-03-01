@@ -19,5 +19,6 @@ $(".down img").click(function(){
 $(`.project .tab li`).click(function(event) {
   let $index = $(this).index()
   $(this).addClass('active').siblings().removeClass('active')
-  $(`.project .content li`).removeClass('active').eq($index).addClass('active')
+
+  $(`.project .content li`).removeClass('active').eq($index).addClass('active');
 });
