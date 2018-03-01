@@ -10,9 +10,10 @@ ol {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
+
 
 body {
   font: 16px Helvetica, Arial, sans-serif;
@@ -182,7 +183,8 @@ body {
       }
       .contactMe {
         a:hover {
-          color: red;
+          color: #4D4D4D;
+          text-decoration: underline;
         }
         width: 940px;
         margin-top: -200px;
@@ -309,6 +311,26 @@ body {
           .content {
             text-align: left;
             height: 600px;
+            a {
+              position: relative;
+              color: #007bff;
+              text-decoration: none;
+              background-color: transparent;
+              &:hover {
+                color: #0056b3;
+                text-decoration: underline;
+                img {
+                  display: block;
+                }
+              }
+              img {
+                margin-top: 20px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                display: none;
+              }
+            }
             li {
               position: relative;
               transition: all 1s;
@@ -323,7 +345,7 @@ body {
                 min-width: 200px;
                 max-width: 400px;
                 max-height: 400px;
-                margin-right: 100px;
+                margin-right: 70px;
                 position: absolute;
                 right: 0;
                 box-shadow: 0 1px 2px rgba(0, 0, 0, .3)
