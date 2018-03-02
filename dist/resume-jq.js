@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({18:[function(require,module,exports) {
+})({22:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],15:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,19 +132,19 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":18}],13:[function(require,module,exports) {
+},{"./bundle-url":22}],12:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../imgs/banner.jpg":[["70786728de56c8d905bc13a4c05a078d.jpg",16],16],"_css_loader":15}],14:[function(require,module,exports) {
+},{"./../imgs/banner.jpg":[["70786728de56c8d905bc13a4c05a078d.jpg",23],23],"_css_loader":16}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":15}],20:[function(require,module,exports) {
+},{"_css_loader":16}],21:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -331,7 +331,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],24:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 var process = require("process");
 !function (t, e) {
   "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.AV = e() : t.AV = e();
@@ -3563,13 +3563,13 @@ var process = require("process");
   }]);
 });
 //# sourceMappingURL=av-min.js.map
-},{"process":20}],23:[function(require,module,exports) {
+},{"process":21}],14:[function(require,module,exports) {
 const AV = require('leancloud-storage');
 const appId = 'UJqXLqhpKuxusuM7IUUfSToE-gzGzoHsz';
 const appKey = '1u5ACnMw1f9fDEKDGF1vhTJB';
 AV.init({ appId, appKey });
 
-},{"leancloud-storage":24}],17:[function(require,module,exports) {
+},{"leancloud-storage":20}],18:[function(require,module,exports) {
 var global = (1,eval)("this");
 var process = require("process");
 /*!
@@ -13937,7 +13937,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":20}],19:[function(require,module,exports) {
+},{"process":21}],17:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * fullPage 2.9.6
@@ -16853,7 +16853,7 @@ var global = (1,eval)("this");
     }; //end of $.fn.fullpage
 });
 
-},{"jquery":17}],2:[function(require,module,exports) {
+},{"jquery":18}],2:[function(require,module,exports) {
 "use strict";
 
 require("./lib/css/main.scss");
@@ -16906,12 +16906,25 @@ $(".messageBoard").submit(function (e) {
   var TestObject = AV.Object.extend('TestObject');
   var testObject = new TestObject();
   testObject.save(messageObj).then(function (object) {
-    alert('留言成功');
+    $(".message").addClass("show").on("animationend", function () {
+      $(this).removeClass("show");
+    });
   }, a => {
     alert("服务器出了一点小问题。");
   });
 });
-},{"./lib/css/main.scss":13,"./lib/css/jquery.fullpage.css":14,"./lib/js/leanCloudInit.js":23,"leancloud-storage":24,"fullpage.js":19,"jquery":17}],21:[function(require,module,exports) {
+
+$("img").click(function () {
+  $(".imgView").addClass('show');
+  console.log($(this));
+  $(".imgView img").attr("src", $(this).attr("src"));
+});
+
+$(".imgView").click(function (e) {
+  $(this).removeClass("show");
+  return false;
+});
+},{"./lib/css/main.scss":12,"./lib/css/jquery.fullpage.css":13,"./lib/js/leanCloudInit.js":14,"leancloud-storage":20,"fullpage.js":17,"jquery":18}],31:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -16931,7 +16944,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '64518' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '55537' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -17032,5 +17045,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[21,2])
+},{}]},{},[31,2])
 //# sourceMappingURL=/dist/resume-jq.map

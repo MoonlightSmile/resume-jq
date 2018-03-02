@@ -48,6 +48,20 @@ $(".messageBoard").submit(function(e) {
   var TestObject = AV.Object.extend('TestObject');
   var testObject = new TestObject();
   testObject.save(messageObj).then(function(object) {
-    alert('留言成功');
-  },(a)=>{alert("服务器出了一点小问题。")})
+    $(".message").addClass("show").on("animationend", function() {
+      $(this).removeClass("show")
+    })
+  }, (a) => { alert("服务器出了一点小问题。") })
+})
+
+
+$("img").click(function() {
+  $(".imgView").addClass('show')
+  console.log($(this));
+  $(".imgView img").attr("src", $(this).attr("src"))
+})
+
+$(".imgView").click(function(e) {
+  $(this).removeClass("show")
+  return false
 })

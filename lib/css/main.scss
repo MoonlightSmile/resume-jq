@@ -14,6 +14,60 @@ a {
   text-decoration: none;
 }
 
+img {
+  cursor: pointer;
+}
+
+.message {
+  box-sizing: border-box;
+  position: fixed;
+  width: 104px;
+  padding: 10px 20px;
+  background: #00d3aa;
+  border-radius: 3px;
+  color: #fff;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.message.show {
+  display: block;
+  animation: show 4s linear 1;
+}
+
+@keyframes show {
+  from {
+    opacity: 1;
+    left: 50%;
+  }
+  to {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+.imgView {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  img {
+    transition: all 1s;
+
+    width: 500px;
+  }
+  &.show {
+    display: flex;
+  }
+}
 
 body {
   font: 16px Helvetica, Arial, sans-serif;
@@ -188,11 +242,10 @@ body {
           position: absolute;
           width: 200px;
         }
-        a:hover {
+        li:hover {
           color: #4D4D4D;
           text-decoration: underline;
           img {
-
             display: block;
           }
         }
