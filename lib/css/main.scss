@@ -18,7 +18,7 @@ img {
   cursor: pointer;
 }
 
-.message {
+.messageSend {
   box-sizing: border-box;
   position: fixed;
   width: 104px;
@@ -31,7 +31,7 @@ img {
   display: none;
 }
 
-.message.show {
+.messageSend.show {
   display: block;
   animation: show 4s linear 1;
 }
