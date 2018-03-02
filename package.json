@@ -6,7 +6,8 @@
   "dependencies": {
     "fullpage.js": "^2.9.6",
     "gh-pages": "^1.1.0",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "leancloud-storage": "^3.6.0"
   },
   "devDependencies": {
     "node-sass": "^4.7.2"

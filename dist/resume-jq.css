@@ -143,7 +143,8 @@ body {
       body #fullpage .section footer div {
         text-align: center;
         position: absolute;
-        right: 10px; }
+        right: 10px;
+        bottom: 10px; }
         body #fullpage .section footer div .ban {
           font-size: 13px;
           color: #A9A697; }
@@ -154,9 +155,15 @@ body {
       margin-left: auto;
       margin-right: auto;
       text-align: left; }
+      body #fullpage .section .contactMe img {
+        display: none;
+        position: absolute;
+        width: 200px; }
       body #fullpage .section .contactMe a:hover {
         color: #4D4D4D;
         text-decoration: underline; }
+        body #fullpage .section .contactMe a:hover img {
+          display: block; }
       body #fullpage .section .contactMe h1 {
         text-align: center;
         margin-bottom: 60px; }
@@ -172,8 +179,63 @@ body {
           padding: 10px;
           margin-left: 10%;
           width: 40%; }
-          body #fullpage .section .contactMe .wrap .right p {
-            margin: 10px 0; }
+          body #fullpage .section .contactMe .wrap .right textarea,
+          body #fullpage .section .contactMe .wrap .right input {
+            font-size: 16px;
+            resize: none;
+            border: none;
+            width: 100%;
+            border-bottom: 1px solid #4D4D4D;
+            height: 100%;
+            padding: 10px 0; }
+          body #fullpage .section .contactMe .wrap .right textarea:focus,
+          body #fullpage .section .contactMe .wrap .right input:focus {
+            outline: none; }
+          body #fullpage .section .contactMe .wrap .right .input-field {
+            display: flex;
+            position: relative;
+            margin-bottom: 30px; }
+          body #fullpage .section .contactMe .wrap .right .input-field span.line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            background: #00d3aa;
+            transition: all .3s;
+            width: 0; }
+          body #fullpage .section .contactMe .wrap .right .input-field label {
+            transition: all .3s;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            color: #4D4D4D; }
+          body #fullpage .section .contactMe .wrap .right .input-field.used span.line {
+            width: 100%; }
+          body #fullpage .section .contactMe .wrap .right .input-field.used label {
+            top: -15px;
+            font-size: 14px;
+            color: #00d3aa;
+            font-weight: 100; }
+          body #fullpage .section .contactMe .wrap .right input[type=submit] {
+            width: auto;
+            padding: 60px 80px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.1;
+            letter-spacing: 0.03em;
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: middle;
+            display: inline-block;
+            cursor: pointer;
+            padding: 12px 20px;
+            margin: 0;
+            border: none;
+            background-image: none;
+            background: #00d3aa;
+            border-radius: 4px;
+            color: #fff; }
     body #fullpage .section .aboutMe {
       height: 100%; }
       body #fullpage .section .aboutMe h2 {
