@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({22:[function(require,module,exports) {
+})({21:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -132,19 +132,19 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":22}],12:[function(require,module,exports) {
+},{"./bundle-url":21}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./../imgs/banner.jpg":[["70786728de56c8d905bc13a4c05a078d.jpg",23],23],"_css_loader":16}],13:[function(require,module,exports) {
+},{"./../imgs/banner.jpg":[["70786728de56c8d905bc13a4c05a078d.jpg",17],17],"_css_loader":16}],14:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],21:[function(require,module,exports) {
+},{"_css_loader":16}],22:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -3563,7 +3563,7 @@ var process = require("process");
   }]);
 });
 //# sourceMappingURL=av-min.js.map
-},{"process":21}],14:[function(require,module,exports) {
+},{"process":22}],15:[function(require,module,exports) {
 const AV = require('leancloud-storage');
 const appId = 'UJqXLqhpKuxusuM7IUUfSToE-gzGzoHsz';
 const appKey = '1u5ACnMw1f9fDEKDGF1vhTJB';
@@ -13937,7 +13937,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":21}],17:[function(require,module,exports) {
+},{"process":22}],19:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * fullPage 2.9.6
@@ -16906,7 +16906,7 @@ $(".messageBoard").submit(function (e) {
   var TestObject = AV.Object.extend('TestObject');
   var testObject = new TestObject();
   testObject.save(messageObj).then(function (object) {
-    $(".message").addClass("show").on("animationend", function () {
+    $(".messageSend").addClass("show").on("animationend", function () {
       $(this).removeClass("show");
     });
   }, a => {
@@ -16914,7 +16914,7 @@ $(".messageBoard").submit(function (e) {
   });
 });
 
-$("img").click(function () {
+$(".vp").click(function () {
   $(".imgView").addClass('show');
   console.log($(this));
   $(".imgView img").attr("src", $(this).attr("src"));
@@ -16924,7 +16924,7 @@ $(".imgView").click(function (e) {
   $(this).removeClass("show");
   return false;
 });
-},{"./lib/css/main.scss":12,"./lib/css/jquery.fullpage.css":13,"./lib/js/leanCloudInit.js":14,"leancloud-storage":20,"fullpage.js":17,"jquery":18}],31:[function(require,module,exports) {
+},{"./lib/css/main.scss":13,"./lib/css/jquery.fullpage.css":14,"./lib/js/leanCloudInit.js":15,"leancloud-storage":20,"fullpage.js":19,"jquery":18}],26:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -16944,7 +16944,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('wss://' + hostname + ':' + '55537' + '/');
+  var ws = new WebSocket('wss://' + hostname + ':' + '55781' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -17045,5 +17045,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[31,2])
+},{}]},{},[26,2])
 //# sourceMappingURL=/dist/resume-jq.map
