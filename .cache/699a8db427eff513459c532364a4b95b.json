@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"leancloud-storage","loc":{"line":1,"column":19}}],"generated":{"js":"const u=require(\"leancloud-storage\"),e=\"UJqXLqhpKuxusuM7IUUfSToE-gzGzoHsz\",o=\"1u5ACnMw1f9fDEKDGF1vhTJB\";u.init({appId:e,appKey:o});"},"hash":"be1571bb403c2ff7c68185d38c2f2b7d","cacheData":{"env":{}}}

@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+input:-webkit-autofill {
+  background-color: red;
+  background-image: none;
+}
+
+input:focus {
+  background-color: transparent;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -115,6 +124,7 @@ body {
   }
   #fullpage {
     .section {
+      position: relative;
       height: calc(100vh - 80px);
       width: 100vw;
       text-align: center;
@@ -147,6 +157,27 @@ body {
           width: 30px;
           &:hover {
             opacity: .4;
+          }
+        }
+      }
+      .downPDF {
+        position: absolute;
+        top: 85%;
+        right: 0;
+        transform: rotate(-45deg);
+        a {
+          color: #61D6BD;
+          background: #fff;
+          font-size: 15px;
+          border: 1px solid #CDCFD1;
+          display: inline-block;
+          padding: 21px 55px;
+          vertical-align: top;
+          transition: all .3s;
+          border-radius: 3px;
+          &:hover {
+            opacity: 0.95;
+            box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
           }
         }
       }

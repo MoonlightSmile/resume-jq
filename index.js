@@ -50,6 +50,10 @@ $(".messageBoard").submit(function(e) {
   testObject.save(messageObj).then(function(object) {
     $(".messageSend").addClass("show").on("animationend", function() {
       $(this).removeClass("show")
+      $message.map(function(a) {
+        $(a).val("");
+        $(a).parent(".input-field").removeClass("used")
+      })
     })
   }, (a) => { alert("服务器出了一点小问题。") })
 })
