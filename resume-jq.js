@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({21:[function(require,module,exports) {
+})({22:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -132,7 +132,7 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":21}],13:[function(require,module,exports) {
+},{"./bundle-url":22}],13:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -144,7 +144,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":16}],22:[function(require,module,exports) {
+},{"_css_loader":16}],21:[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {};
@@ -331,7 +331,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],20:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 var process = require("process");
 !function (t, e) {
   "object" == typeof exports && "object" == typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define([], e) : "object" == typeof exports ? exports.AV = e() : t.AV = e();
@@ -3563,13 +3563,13 @@ var process = require("process");
   }]);
 });
 //# sourceMappingURL=av-min.js.map
-},{"process":22}],15:[function(require,module,exports) {
+},{"process":21}],15:[function(require,module,exports) {
 const AV = require('leancloud-storage');
 const appId = 'UJqXLqhpKuxusuM7IUUfSToE-gzGzoHsz';
 const appKey = '1u5ACnMw1f9fDEKDGF1vhTJB';
 AV.init({ appId, appKey });
 
-},{"leancloud-storage":20}],18:[function(require,module,exports) {
+},{"leancloud-storage":18}],20:[function(require,module,exports) {
 var global = (1,eval)("this");
 var process = require("process");
 /*!
@@ -13937,7 +13937,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":22}],19:[function(require,module,exports) {
+},{"process":21}],19:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * fullPage 2.9.6
@@ -16853,7 +16853,7 @@ var global = (1,eval)("this");
     }; //end of $.fn.fullpage
 });
 
-},{"jquery":18}],2:[function(require,module,exports) {
+},{"jquery":20}],2:[function(require,module,exports) {
 "use strict";
 
 require("./lib/css/main.scss");
@@ -16908,6 +16908,10 @@ $(".messageBoard").submit(function (e) {
   testObject.save(messageObj).then(function (object) {
     $(".messageSend").addClass("show").on("animationend", function () {
       $(this).removeClass("show");
+      $message.map(function (a) {
+        $(a).val("");
+        $(a).parent(".input-field").removeClass("used");
+      });
     });
   }, a => {
     alert("服务器出了一点小问题。");
@@ -16924,7 +16928,7 @@ $(".imgView").click(function (e) {
   $(this).removeClass("show");
   return false;
 });
-},{"./lib/css/main.scss":13,"./lib/css/jquery.fullpage.css":14,"./lib/js/leanCloudInit.js":15,"leancloud-storage":20,"fullpage.js":19,"jquery":18}],26:[function(require,module,exports) {
+},{"./lib/css/main.scss":13,"./lib/css/jquery.fullpage.css":14,"./lib/js/leanCloudInit.js":15,"leancloud-storage":18,"fullpage.js":19,"jquery":20}],28:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -16944,7 +16948,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('wss://' + hostname + ':' + '55781' + '/');
+  var ws = new WebSocket('wss://' + hostname + ':' + '62366' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -17045,5 +17049,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[26,2])
+},{}]},{},[28,2])
 //# sourceMappingURL=/dist/resume-jq.map
